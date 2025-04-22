@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     //Movement speed
     public float speed = 15f;
+    public int health = 15;
 
     public float talk;
 

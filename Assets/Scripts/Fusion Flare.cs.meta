@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b458cd07561172c489e8a390cc30a0de
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - flame: {fileID: 919132149155446097, guid: b1941699548ad884bb05def903a496d3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
