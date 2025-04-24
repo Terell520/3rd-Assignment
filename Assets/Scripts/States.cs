@@ -1,4 +1,6 @@
+using UnityEditorInternal;
 using UnityEngine;
+using static States;
 
 public class States : MonoBehaviour
 {
@@ -12,4 +14,5 @@ public class States : MonoBehaviour
     }
 
     public PlayerState State = PlayerState.Idle;
+
 }

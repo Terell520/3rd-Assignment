@@ -8,9 +8,9 @@ public class FusionFlare : Skill
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Activate(GameObject user)
     {
+        Debug.Log("Fusion Flare has been triggered.");
         Vector3 spawnPos = user.transform.position + user.transform.forward * 3f + Vector3.up * 10f;
         GameObject fx = GameObject.Instantiate(flame, spawnPos, Quaternion.identity);
-        GameObject.Destroy(fx, 1f);
 
         Debug.Log($"Fusion Flare activated!");
     }

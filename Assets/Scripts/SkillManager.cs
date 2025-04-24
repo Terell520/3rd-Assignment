@@ -17,7 +17,12 @@ public class SkillManager : MonoBehaviour
     {
         if (equippedSkills[index] != null)
         {
+            Debug.Log("Using skill: " + equippedSkills[index].name);
             equippedSkills[index].Use(Anna);
+        }
+        else
+        {
+            Debug.Log("No skill assigned to slot" + index);
         }
     }
 }
