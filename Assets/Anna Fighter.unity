@@ -713,6 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  health: 15
   talk: 0
   cam: {fileID: 2076412620}
   DaSmoothTime: 0.1
