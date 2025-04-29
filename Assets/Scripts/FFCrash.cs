@@ -9,7 +9,7 @@ public class FFCrash : MonoBehaviour
     {
         transform.position += Vector3.down * fallSpeed * Time.deltaTime;
         
-        if (Physics.Raycast(transform.position, Vector3.down, 0.6f, groundLayer))
+        if (Physics.Raycast(transform.position, Vector3.down, 5f, groundLayer))
         {
             Explode();
         }

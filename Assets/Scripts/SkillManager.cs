@@ -4,11 +4,17 @@ public class SkillManager : MonoBehaviour
 {
     public Skill[] equippedSkills; //Assigns skills to the inspector in the Editor
     public GameObject Anna;
+    private float lastUsedTime;
+
     // Update is called once per frame
-    void Update()
+    public void Use(GameObject user)
     {
         if (Input.GetKeyDown(KeyCode.Q))
+        {
             UseSkill(0);
+            lastUsedTime = Time.time;
+        }
+
         if (Input.GetKeyDown(KeyCode.E))
             UseSkill(0);
     }
