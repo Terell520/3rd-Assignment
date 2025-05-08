@@ -9,9 +9,9 @@ public class SkillManager : MonoBehaviour
     // Update is called once per frame
     public void Use(GameObject user)
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && Time.time >= lastUsedTime + equippedSkills[0].cooldown)
         {
-            UseSkill(FusionFlare);
+            UseSkill(0);
             lastUsedTime = Time.time;
         }
 

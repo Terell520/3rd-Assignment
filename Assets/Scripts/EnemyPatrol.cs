@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public UnityEngine.AI.NavMeshAgent agent;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Transform Anna;
+
+    public LayerMask whosanna, ground;
+
+    //Patrolling
+    public Vector3 walkPoint;
+    bool walkPointSet;
+    public bool walkPointRange;
 }
