@@ -7,11 +7,11 @@ public class SkillManager : MonoBehaviour
     private float lastUsedTime;
 
     // Update is called once per frame
-    public void Update()
+    public void Use(GameObject user)
     {
-        if (Input.GetKeyDown(KeyCode.Q) && Time.time >= lastUsedTime + equippedSkills[0].cooldown)
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            UseSkill(0);
+            UseSkill(FusionFlare);
             lastUsedTime = Time.time;
         }
 
