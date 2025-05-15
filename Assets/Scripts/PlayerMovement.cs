@@ -5,12 +5,16 @@ public class PlayerMovement : MonoBehaviour
     //Movement speed
     public float speed = 15f;
     public int health = 15;
-
     public float talk;
-
     public Transform cam;
-
     public float DaSmoothTime = 0.1f;
+    private Animator animator;
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>(); //Reference for animator
+    }
 
     // SMooth velocity reference
 
@@ -22,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical"); // Raw inputs for when W & S are pressed
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
+        //Animation parameter for blending 
+        animator.SetFloat("Speed", direction.magnitude);
+
         if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -30,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward; //Turns rotaton into direction
             transform.position += moveDir.normalized * speed * Time.deltaTime;
+            
         }
     }
 

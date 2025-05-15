@@ -4,7 +4,13 @@ public class PlayerAttack : MonoBehaviour
 {
     public float attackCooldown = 1f;
     private float nextAttackTime = 0f;
+    private Animator animator;
+    private int attackIndex = 1;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -18,6 +24,10 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
-        Debug.Log("Anna Attacks!");
+        Debug.Log($"Attack {attackIndex}!");
+        animator.SetInteger("AttackIndex", attackIndex);
+        animator.SetTrigger("Attack");
+
+        attackIndex = (attackIndex == 1) ? 2 : 1;
     }
 }

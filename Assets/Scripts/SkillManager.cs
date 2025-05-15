@@ -15,8 +15,11 @@ public class SkillManager : MonoBehaviour
             lastUsedTime = Time.time;
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
-            UseSkill(0);
+        if (Input.GetKeyDown(KeyCode.E) && Time.time >= lastUsedTime + equippedSkills[1].cooldown)
+        {
+            UseSkill(1);
+            lastUsedTime = Time.time;
+        }
     }
 
     void UseSkill(int index)

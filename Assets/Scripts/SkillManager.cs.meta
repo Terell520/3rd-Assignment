@@ -1,2 +1,12 @@
 fileFormatVersion: 2
 guid: cd34fe41711c6884f9ba37702a988866
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Anna: {fileID: 919132149155446097, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
