@@ -10,17 +10,10 @@ using UnityEngine;
 
     public abstract void Activate(GameObject user);
 
-    public bool IsReady()
-    {
-        return Time.time >= lastUsedTime + cooldown;
-    }
 
     public void Use(GameObject user)
     {
-        if (IsReady())
-        {
             Activate(user);
             lastUsedTime = Time.time;
-        }
     }
 }

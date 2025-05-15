@@ -27,6 +27,7 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log($"Attack {attackIndex}!");
         animator.SetInteger("AttackIndex", attackIndex);
         animator.SetTrigger("Attack");
+        Debug.Log("Anna Slashes!");
 
         attackIndex = (attackIndex == 1) ? 2 : 1;
     }

@@ -7,7 +7,7 @@ public class SkillManager : MonoBehaviour
     private float lastUsedTime;
 
     // Update is called once per frame
-    public void Use(GameObject user)
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q) && Time.time >= lastUsedTime + equippedSkills[0].cooldown)
         {
