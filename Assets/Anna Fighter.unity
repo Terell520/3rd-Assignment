@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 184898787}
   - component: {fileID: 184898786}
   - component: {fileID: 184898785}
+  - component: {fileID: 184898788}
   m_Layer: 0
   m_Name: Anna3rdPos
   m_TagString: Untagged
@@ -260,6 +261,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184898783}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &184898788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184898783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd34fe41711c6884f9ba37702a988866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equippedSkills:
+  - {fileID: 11400000, guid: b2d4fd997e6ae6741bddef0cbc568b5a, type: 2}
+  - {fileID: 0}
+  Anna: {fileID: 0}
 --- !u!1001 &388807266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -344,6 +361,26 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[7]'
       value: 
       objectReference: {fileID: 2100000, guid: dfcd3ea9e347730498efe4c1f80a2676, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 812b176f6e7150d4a9b24a2a1811d739, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620195101949462730, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.023525016
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620195101949462730, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.32388777
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620195101949462730, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13835768
+      objectReference: {fileID: 0}
     - target: {fileID: 6868716418057165105, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -380,8 +417,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -16.455
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5866666021909216657, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+    - target: {fileID: 7437977054926498666, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07715595
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437977054926498666, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.035330992
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437977054926498666, guid: 91acf93799d6fc547ad88cace36faf88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.018633574
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1039,6 +1087,7 @@ MonoBehaviour:
   - {fileID: 1896956053}
   targetPoint: 0
   speed: 2
+  health: 50
 --- !u!54 &1857991553
 Rigidbody:
   m_ObjectHideFlags: 0
